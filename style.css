@@ -1,0 +1,125 @@
+body {
+    background: linear-gradient(
+        rgba(255, 247, 247, 0.8),
+        rgba(255, 247, 247, 0.8)
+      ),
+      url("images/bg4.png");
+  }
+
+  .title {
+    color: #ff0080;
+    font-family: "Playwrite AT", cursive;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 2px 2px 5px black;
+    font-size: 100px;
+    text-align: center;
+    word-spacing: 10px;
+  }
+
+  .options {
+    color: #af47d2;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 2px 2px 3px black;
+    font-size: 70px;
+    text-align: center;
+    word-spacing: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 50px;
+    transition-property: color;
+    transition-duration: 2s;
+  }
+  .options:hover {
+    color: #ff0080;
+  }
+
+  .option-contianer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 50px;
+  }
+  .img2 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #ff0080, -2px -2px 5px #ff0080;
+    transform: rotate(5deg);
+    object-fit: cover;
+  }
+  .img1 img {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #ff0080, -2px -2px 5px #ff0080;
+    transform: rotate(-5deg);
+    object-fit: cover;
+  }
+
+  .text {
+    color: #ff0080;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-shadow: 2px 2px 2px black;
+    font-size: 50px;
+    text-align: center;
+    word-spacing: 10px;
+    padding-left: 40px;
+    transition-property: color;
+    transition-duration: 2s;
+  }
+  .text:hover {
+    color: #af47d2;
+  }
+  .text1 {
+    padding-top: 50px;
+    color: #af47d2;
+    font-family: "Playwrite AT", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    text-align: center;
+    word-spacing: 10px;
+  }
+  .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  @media (max-width: 500px) {
+    .title {
+      font-size: 80px;
+      text-align: center;
+      position: relative;
+    }
+    .options {
+      font-size: 40px;
+      text-shadow: 1px 1px 1px black;
+      text-align: center; 
+
+    }
+    .text1 {
+      font-size: 30px;
+      text-align: center; 
+      padding-left: 0px;
+    }
+    .option-contianer {
+      gap: 10px;
+    }
+    .text {
+      font-size: 20px;
+      text-shadow: 1px 1px 1px black;
+      text-align: center; 
+    }
+    .img2 img,
+    .img1 img {
+      width: auto;
+      height: 200px;
+    }
+  }
